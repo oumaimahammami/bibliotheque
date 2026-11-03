@@ -1,0 +1,13 @@
+<div class="card">
+  <h3>{{ livre.titre }}</h3>
+  <p>{{ livre.auteur }} — {{ livre.annee }}</p>
+  <p class="resume">{{ livre.resume ?? 'Pas de résumé' }}</p>
+
+  @if (livre.disponible) {
+    <span class="badge ok">Disponible</span>
+  } @else {
+    <span class="badge ko">Emprunté</span>
+  }
+
+  <button (click)="changerEtat()">Changer l'état</button>
+</div>

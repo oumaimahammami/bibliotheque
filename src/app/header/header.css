@@ -1,0 +1,18 @@
+/* Styles encapsulés : ils ne s'appliquent qu'au header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #c3002f;
+  color: white;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}

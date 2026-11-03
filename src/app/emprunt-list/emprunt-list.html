@@ -1,0 +1,19 @@
+<h2>Emprunts</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Livre</th>
+      <th>Emprunteur</th>
+      <th>Statut</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (emprunt of emprunts; track emprunt.id) {
+      <tr>
+        <td>{{ titreLivre(emprunt.livreId) }}</td>
+        <td>{{ emprunt.emprunteur }}</td>
+        <td><span class="pastille {{ emprunt.statut }}">{{ libelles[emprunt.statut] }}</span></td>
+      </tr>
+    }
+  </tbody>
+</table>

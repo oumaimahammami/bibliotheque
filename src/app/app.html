@@ -1,0 +1,17 @@
+<app-header />
+
+<main>
+  <h1>{{ nomBibliotheque }}</h1>
+  <p>Année universitaire  {{ annee }} – {{ annee + 1 }}</p>
+
+  <section class="grille">
+    <app-livre-card />
+    <app-livre-card />
+    <app-livre-card />
+  </section>
+
+  <app-livre-list />
+  <app-emprunt-list />
+</main>
+
+<app-footer />

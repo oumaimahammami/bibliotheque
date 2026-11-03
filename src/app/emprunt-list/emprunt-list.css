@@ -1,0 +1,7 @@
+table { border-collapse: collapse; width: 100%; max-width: 600px; }
+th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid #e5e7eb; }
+th { background: #1b1b2f; color: white; }
+.pastille { padding: 2px 10px; border-radius: 12px; font-size: 0.8rem; color: white; }
+.EN_COURS { background: #2563eb; }
+.EN_RETARD { background: #dc2626; }
+.RENDU { background: #16a34a; }

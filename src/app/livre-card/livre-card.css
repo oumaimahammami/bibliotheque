@@ -1,0 +1,23 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 220px;
+}
+.badge {
+  padding: 2px 8px;
+  border-radius: 12px;
+  color: white;
+  font-size: 0.8rem;
+}
+.ok { background: #16a34a; }
+.ko { background: #dc2626; }
+button {
+  display: block;
+  margin-top: 0.75rem;
+  cursor: pointer;
+}
+.resume {
+  font-size: 0.85rem;
+  color: #6b7280;
+}

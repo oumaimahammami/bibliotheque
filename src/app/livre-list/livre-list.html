@@ -1,0 +1,11 @@
+<h2>Catalogue ({{ nbDisponibles }} disponibles / {{ livres.length }})</h2>
+<ul>
+  @for (livre of livres; track livre.id) {
+    <li>
+      {{ livre.titre }} — {{ livre.auteur }} <span class="genre">{{ livre.genre }}</span>
+      @if (!livre.disponible) { <em>(emprunté)</em> }
+    </li>
+  } @empty {
+    <li>Aucun livre</li>
+  }
+</ul>
